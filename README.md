@@ -21,7 +21,8 @@ tfm_cardiovascular/
 │   ├── 03_preprocessing.py         # Limpieza, codificación, split train/test estratificado
 │   ├── 04_modelado.py              # Entrenamiento y comparación de 6 modelos (CV 5-fold + test)
 │   ├── 05_comparacion_modelos_plot.py  # Curvas ROC y matriz de confusión del modelo final
-│   └── 06_optimizacion_interpretacion.py  # Ajuste de hiperparámetros + interpretabilidad del modelo final
+│   ├── 06_optimizacion_interpretacion.py  # Ajuste de hiperparámetros + interpretabilidad del modelo final
+│   └── 07_shap.py                  # Interpretabilidad adicional con SHAP (impacto global e individual)
 ├── outputs/                        # Figuras, tablas de resultados y objetos entrenados (generados al ejecutar)
 ├── requirements.txt
 └── README.md
@@ -38,6 +39,7 @@ python 03_preprocessing.py
 python 04_modelado.py
 python 05_comparacion_modelos_plot.py
 python 06_optimizacion_interpretacion.py
+python 07_shap.py
 ```
 
 Cada script guarda sus resultados (figuras, tablas `.csv`, objetos `.joblib`) en `outputs/`.
